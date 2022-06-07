@@ -1,10 +1,189 @@
-.title {
-    text-align: center;
-    font-weight: bold;
-    font-size: 40px;
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e5e5e5;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 0.313rem;
+  height: 97%;
+  width: 80%;
+  max-width: 38.75rem;
+  max-height: 47.688rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+}
+
+.logo {
+  padding-top: 1.75rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.titulo {
+  font-size: 2.25rem;
+  line-height: 1.5rem;
+  padding: 0.938rem;
+  font-family: "Inter", sans-serif;
+  padding-bottom: 3.125rem;
 }
 
 .inputs {
-    display: inline-block;
-    margin: 10px 20px 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.check {
+  display: flex;
+  align-items: center;
+}
+
+.check > label {
+  color: #111111;
+  padding-left: 0.5rem;
+}
+
+.check > input {
+  width: auto;
+}
+
+.formulario {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 2.5rem 1.375rem;
+  grid-template-areas:
+    "fullname fullname"
+    "email phone"
+    "password birthday"
+    "acceptTerms registerButton";
+  align-items: center;
+}
+
+.nome {
+  grid-area: fullname;
+}
+
+.email {
+  grid-area: email;
+}
+
+.telefone {
+  grid-area: phone;
+}
+
+.password {
+  grid-area: password;
+}
+
+.birthday {
+  grid-area: birthday;
+}
+
+.accepted {
+  grid-area: acceptTerms;
+}
+
+.enviar {
+  grid-area: registerButton;
+  display: flex;
+  justify-content: flex-end;
+}
+
+input {
+  border: 0.125rem solid #aaaaaa;
+  border-radius: 0.25rem;
+  height: 2.5rem;
+  width: 100%;
+}
+
+label {
+  color: #767676;
+}
+
+.button{
+  width: 5.063rem;
+  height: 2.5rem;
+  max-width: 5.063rem;
+  max-height: 2.5rem;
+  border-radius: 0.625rem;
+  border-style: none;
+  background-color: #0DBDBD;
+  color: #FFFFFF;
+}
+
+@media (max-width: 650px){
+  .container{
+    background-color: #ffffff;
+  }
+
+  .form{  
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; 
+    gap: 3.75rem 2.5rem; 
+    grid-template-areas: 
+    "fullName fullName"
+    "email email"
+    "password password"
+    "phone birthday"
+    "acceptTerms acceptTerms"
+    "registerButton registerButton"; 
+  }
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #E5E5E5;
+  height: 100vh;
+}
+
+.card {
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  height: 763px;
+  width: 620px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img{
+  margin-top: 50px;
+  padding-bottom: 56px;
+}
+
+h1{
+  display: flex;
+  justify-content: center;
+  font-family: "Inter", sans-serif;
+  font-size: 40px;
+  line-height: 24px;
+  font-weight: 400;
+  padding-bottom: 157px;
+
+}
+
+.button input{
+  display: flex;
+  font-family: "Nunito", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  background-color: #0DBDBD;
+  color: white;
+  width: 269px;
+  height: 177px;
+  margin-bottom: 137px;
+  border-radius: 10px;
+  border-style: none;
+  justify-content: center;
 }
